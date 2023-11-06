@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+class Parent {
+public:
+    void display() {
+        cout << "This is the Parent class." << endl;
+    }
+};
+
+class Child : public Parent {
+public:
+    void show() {
+        cout << "This is the Child class, inherited from Parent." << endl;
+    }
+};
+
+int main() {
+    Child obj;
+    obj.display();
+    obj.show();
+    
+    cout << "Muskan Y. Chandera" << endl;
+    cout << "220130318043" << endl;
+
+    return 0;
+}
