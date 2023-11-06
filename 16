@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int area(int side) {
+    return side * side;
+}
+
+int area(int length, int width) {
+    return length * width;
+}
+
+int area(int radius, double pi = 3.14) {
+    return pi * radius * radius;
+}
+
+int main() {
+    int s = 5;
+    int l = 4, w = 6;
+    int r = 3;
+
+    cout << "Area of square: " << area(s) << endl;
+    cout << "Area of rectangle: " << area(l, w) << endl;
+    cout << "Area of circle: " << area(r) << endl;
+
+    cout << "Muskan Y. Chandera" << endl;
+    cout << "220130318043" << endl;
+
+    return 0;
+}
