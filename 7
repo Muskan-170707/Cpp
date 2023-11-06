@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+class Base {
+public:
+    virtual void display() {
+        cout << "This is the Base class." << endl;
+    }
+};
+
+class Derived : public Base {
+public:
+    void display() {
+        cout << "This is the Derived class, overriding Base class." << endl;
+    }
+};
+
+int main() {
+    Base* b;
+    Derived d;
+    b = &d;
+    b->display(); // Calls the function based on the object's actual type (Derived class)
+
+    cout << "Muskan Y. Chandera" << endl;
+    cout << "220130318043" << endl;
+
+    return 0;
+}
