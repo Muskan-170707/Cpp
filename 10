@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+class DefaultConstructor {
+private:
+    int num;
+
+public:
+    DefaultConstructor() {
+        num = 0;  // Default value
+    }
+
+    void display() {
+        cout << "Default Value: " << num << endl;
+    }
+};
+
+int main() {
+    DefaultConstructor dc;
+    dc.display();
+
+    cout << "Muskan Y. Chandera" << endl;
+    cout << "220130318043" << endl;
+
+    return 0;
+}
