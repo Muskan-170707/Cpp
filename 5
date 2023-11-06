@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+
+class Year {
+private:
+    int manufacture_year;
+    int expiry_year;
+
+public:
+    void set_years(int manufacture, int expiry) {
+        manufacture_year = manufacture;
+        expiry_year = expiry;
+    }
+
+    Year difference(const Year &other_year) {
+        Year diff;
+        diff.manufacture_year = manufacture_year - other_year.manufacture_year;
+        diff.expiry_year = expiry_year - other_year.expiry_year;
+        return diff;
+    }
+
+    void display_difference() {
+        cout << "Difference in manufacture year: " << manufacture_year << " years" << endl;
+        cout << "Difference in expiry year: " << expiry_year << " years" << endl;
+    }
+};
+
+int main() {
+    Year year1, year2, year_diff;
+    year1.set_years(2000, 2025);
+    year2.set_years(2010, 2030);
+
+    year_diff = year1.difference(year2);
+
+    year_diff.display_difference();
+
+    cout << "Muskan Y. Chandera" << endl;
+    cout << "220130318043" << endl;
+
+    return 0;
+}
