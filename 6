@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+class Shape {
+public:
+    double height;
+    double base;
+
+    void display_shape();
+
+    Shape() {
+        height = 0.0;
+        base = 0.0;
+    }
+};
+
+void Shape::display_shape() {
+    cout << "Height: " << height << " units" << endl;
+    cout << "Base: " << base << " units" << endl;
+}
+
+int main() {
+    Shape s;
+    s.height = 5.0;
+    s.base = 3.0;
+
+    s.display_shape();
+
+    cout << "Muskan Y. Chandera" << endl;
+    cout << "220130318043" << endl;
+
+    return 0;
+}
