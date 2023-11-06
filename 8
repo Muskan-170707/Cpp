@@ -1,0 +1,25 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    double kilometers;
+    
+    cout << "Enter distance in kilometers: ";
+    cin >> kilometers;
+
+    double centimeters = kilometers * 100000;
+    double meters = kilometers * 1000;
+    double inches = kilometers * 39370.1;
+    double feet = kilometers * 3280.84;
+
+    cout << "Distance in centimeters: " << centimeters << " cm" << endl;
+    cout << "Distance in meters: " << meters << " m" << endl;
+    cout << "Distance in inches: " << inches << " inches" << endl;
+    cout << "Distance in feet: " << feet << " feet" << endl;
+
+    cout << "Muskan Y. Chandera" << endl;
+    cout << "220130318043" << endl;
+
+    return 0;
+}
