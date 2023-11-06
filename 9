@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+class Max {
+private:
+    int num_1, num_2;
+
+public:
+    void input() {
+        cout << "Enter two numbers: ";
+        cin >> num_1 >> num_2;
+    }
+
+    void largest() {
+        int max_num = (num_1 > num_2) ? num_1 : num_2;
+        cout << "Largest number is: " << max_num << endl;
+    }
+
+    void display() {
+        cout << "Number 1: " << num_1 << endl;
+        cout << "Number 2: " << num_2 << endl;
+    }
+};
+
+int main() {
+    Max m;
+    m.input();
+    m.display();
+    m.largest();
+
+    cout << "Muskan Y. Chandera" << endl;
+    cout << "220130318043" << endl;
+
+    return 0;
+}
