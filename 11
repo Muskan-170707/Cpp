@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int x = 10; // Global variable
+
+int &getRef() {
+    return x;
+}
+
+int main() {
+    int &ref = getRef();
+
+    cout << "Value of x using reference: " << ref << endl;
+
+    ref = 20;
+
+    cout << "Value of x after modification: " << x << endl;
+
+    cout << "Muskan Y. Chandera" << endl;
+    cout << "220130318043" << endl;
+
+    return 0;
+}
