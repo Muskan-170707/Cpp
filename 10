@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+class Max {
+private:
+    int num1, num2, num3;
+
+public:
+    void input() {
+        cout << "Enter three numbers: ";
+        cin >> num1 >> num2 >> num3;
+    }
+
+    int findMax() {
+        int max_num = (num1 > num2) ? num1 : num2;
+        return (max_num > num3) ? max_num : num3;
+    }
+};
+
+int main() {
+    Max m;
+    m.input();
+
+    int max = m.findMax();
+
+    cout << "Maximum number is: " << max << endl;
+
+    cout << "Muskan Y. Chandera" << endl;
+    cout << "220130318043" << endl;
+
+    return 0;
+}
