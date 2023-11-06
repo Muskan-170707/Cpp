@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+
+class B;
+
+class A {
+public:
+    void display(B);
+};
+
+class B {
+private:
+    int b;
+
+public:
+    B() : b(10) {}
+
+    friend void A::display(B);
+};
+
+void A::display(B x) {
+    cout << "Value of b in class B is: " << x.b << endl;
+}
+
+int main() {
+    A a;
+    B b;
+    a.display(b);
+
+    cout << "Muskan Y. Chandera" << endl;
+    cout << "220130318043" << endl;
+
+    return 0;
+}
