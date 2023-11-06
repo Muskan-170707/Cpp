@@ -1,0 +1,37 @@
+#include <iostream>
+using namespace std;
+
+class Student {
+public:
+    string name;
+    int age;
+
+    void get_details() {
+        cout << "Enter name: ";
+        cin >> name;
+        cout << "Enter age: ";
+        cin >> age;
+    }
+
+    void display_details() {
+        cout << "Name: " << name << endl;
+        cout << "Age: " << age << endl;
+    }
+};
+
+void display_student_details(Student s) {
+    cout << "Student Details:" << endl;
+    s.display_details();
+}
+
+int main() {
+    Student s;
+    s.get_details();
+
+    display_student_details(s);
+
+    cout << "Muskan Y. Chandera" << endl;
+    cout << "220130318043" << endl;
+
+    return 0;
+}
