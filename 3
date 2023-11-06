@@ -1,0 +1,24 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main() {
+    ifstream file("test.txt");
+    
+    if (file.is_open()) {
+        int characterCount = 0;
+        char ch;
+        while (file.get(ch)) {
+            characterCount++;
+        }
+        file.close();
+        cout << "Number of characters in the file: " << characterCount << endl;
+    } else {
+        cerr << "Unable to open the file." << endl;
+    }
+    
+    cout << "Muskan Y. Chandera" << endl;
+    cout << "220130318043" << endl;
+
+    return 0;
+}
