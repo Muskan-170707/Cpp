@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+class DestructorDemo {
+public:
+    DestructorDemo() {
+        cout << "Object is created." << endl;
+    }
+
+    ~DestructorDemo() {
+        cout << "Object is destroyed." << endl;
+    }
+};
+
+int main() {
+    DestructorDemo obj;
+
+    cout << "Muskan Y. Chandera" << endl;
+    cout << "220130318043" << endl;
+
+    return 0;
+}
