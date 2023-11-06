@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+
+struct Employee {
+    char emp_name[50];
+    int emp_code;
+    float emp_salary;
+    char emp_branch[50];
+};
+
+int main() {
+    Employee emp;
+
+    cout << "Enter employee name: ";
+    cin.getline(emp.emp_name, 50);
+    cout << "Enter employee code: ";
+    cin >> emp.emp_code;
+    cout << "Enter employee salary: ";
+    cin >> emp.emp_salary;
+    cout << "Enter employee branch: ";
+    cin.ignore();
+    cin.getline(emp.emp_branch, 50);
+
+    cout << "Employee Details:" << endl;
+    cout << "Name: " << emp.emp_name << endl;
+    cout << "Code: " << emp.emp_code << endl;
+    cout << "Salary: " << emp.emp_salary << endl;
+    cout << "Branch: " << emp.emp_branch << endl;
+
+    cout << "Muskan Y. Chandera" << endl;
+    cout << "220130318043" << endl;
+
+    return 0;
+}
