@@ -1,0 +1,43 @@
+#include <iostream>
+using namespace std;
+
+class Item {
+public:
+    int item_number;
+    string item_name;
+    double item_cost;
+};
+
+void getData(Item &item) {
+    cout << "Enter item number: ";
+    cin >> item.item_number;
+    cout << "Enter item name: ";
+    cin >> item.item_name;
+    cout << "Enter item cost: $";
+    cin >> item.item_cost;
+}
+
+int main() {
+    Item item1, item2;
+
+    cout << "Enter details for item 1:" << endl;
+    getData(item1);
+
+    cout << "Enter details for item 2:" << endl;
+    getData(item2);
+
+    cout << "Item 1 Details:" << endl;
+    cout << "Item Number: " << item1.item_number << endl;
+    cout << "Item Name: " << item1.item_name << endl;
+    cout << "Item Cost: $" << item1.item_cost << endl;
+
+    cout << "Item 2 Details:" << endl;
+    cout << "Item Number: " << item2.item_number << endl;
+    cout << "Item Name: " << item2.item_name << endl;
+    cout << "Item Cost: $" << item2.item_cost << endl;
+
+    cout << "Muskan Y. Chandera" << endl;
+    cout << "220130318043" << endl;
+
+    return 0;
+}
