@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+class A {
+    int a = 5;
+
+public:
+    friend class B;
+};
+
+class B {
+public:
+    void display(A x) {
+        cout << "Value of a in class A is: " << x.a << endl;
+    }
+};
+
+int main() {
+    A a;
+    B b;
+    b.display(a);
+
+    cout << "Muskan Y. Chandera" << endl;
+    cout << "220130318043" << endl;
+
+    return 0;
+}
