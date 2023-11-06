@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+
+class B;
+
+class A {
+    int a;
+
+public:
+    A() : a(5) {}
+
+    friend int add(A, B);
+};
+
+class B {
+    int b;
+
+public:
+    B() : b(10) {}
+
+    friend int add(A, B);
+};
+
+int add(A x, B y) {
+    return x.a + y.b;
+}
+
+int main() {
+    A a;
+    B b;
+
+    int result = add(a, b);
+
+    cout << "Sum of values in class A and class B: " << result << endl;
+
+    cout << "Muskan Y. Chandera" << endl;
+    cout << "220130318043" << endl;
+
+    return 0;
+}
