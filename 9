@@ -1,0 +1,42 @@
+#include <iostream>
+using namespace std;
+
+class B;  // Forward declaration
+
+class A {
+private:
+    int numA;
+
+public:
+    A() : numA(5) {}
+
+    friend int add(A, B);
+};
+
+class B {
+private:
+    int numB;
+
+public:
+    B() : numB(10) {}
+
+    friend int add(A, B);
+};
+
+int add(A x, B y) {
+    return x.numA + y.numB;
+}
+
+int main() {
+    A a;
+    B b;
+
+    int sum = add(a, b);
+
+    cout << "Sum of values from class A and class B: " << sum << endl;
+
+    cout << "Muskan Y. Chandera" << endl;
+    cout << "220130318043" << endl;
+
+    return 0;
+}
