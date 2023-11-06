@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+void printMultiplicationTable(int num) {
+    for (int i = 1; i <= 10; i++) {
+        cout << num << " x " << i << " = " << num * i << endl;
+    }
+}
+
+int main() {
+    int number;
+
+    cout << "Enter a number: ";
+    cin >> number;
+
+    cout << "Multiplication Table of " << number << ":" << endl;
+    printMultiplicationTable(number);
+
+    cout << "Muskan Y. Chandera" << endl;
+    cout << "220130318043" << endl;
+
+    return 0;
+}
