@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+class Parent1 {
+public:
+    void display1() {
+        cout << "This is Parent1 class." << endl;
+    }
+};
+
+class Parent2 {
+public:
+    void display2() {
+        cout << "This is Parent2 class." << endl;
+    }
+};
+
+class Child : public Parent1, public Parent2 {
+public:
+    void show() {
+        cout << "This is the Child class, inherited from Parent1 and Parent2." << endl;
+    }
+};
+
+int main() {
+    Child obj;
+    obj.display1();
+    obj.display2();
+    obj.show();
+    
+    cout << "Muskan Y. Chandera" << endl;
+    cout << "220130318043" << endl;
+
+    return 0;
+}
