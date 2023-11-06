@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+void displayMessage(const char *message) {
+    cout << message << endl;
+}
+
+int main() {
+    const char *greeting = "Hello, World!";
+
+    displayMessage(greeting);
+
+    cout << "Muskan Y. Chandera" << endl;
+    cout << "220130318043" << endl;
+
+    return 0;
+}
