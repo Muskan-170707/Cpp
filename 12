@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int addNumbers(int a, int b, int c = 0) {
+    return a + b + c;
+}
+
+int main() {
+    int num1, num2;
+
+    cout << "Enter two numbers: ";
+    cin >> num1 >> num2;
+
+    int sum1 = addNumbers(num1, num2);
+    int sum2 = addNumbers(num1, num2, 5);
+
+    cout << "Sum with default argument: " << sum1 << endl;
+    cout << "Sum with non-default argument: " << sum2 << endl;
+
+    cout << "Muskan Y. Chandera" << endl;
+    cout << "220130318043" << endl;
+
+    return 0;
+}
