@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+void add(int &a, int b) {
+    a += b;
+}
+
+int main() {
+    int num1, num2;
+
+    cout << "Enter two numbers: ";
+    cin >> num1 >> num2;
+
+    add(num1, num2);
+
+    cout << "Sum of the two numbers: " << num1 << endl;
+
+    cout << "Muskan Y. Chandera" << endl;
+    cout << "220130318043" << endl;
+
+    return 0;
+}
