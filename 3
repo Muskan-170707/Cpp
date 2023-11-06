@@ -1,0 +1,45 @@
+#include <iostream>
+using namespace std;
+
+class Student {
+private:
+    int roll_number;
+    float spi;
+
+public:
+    void get_data() {
+        cout << "Enter Roll Number: ";
+        cin >> roll_number;
+        cout << "Enter SPI: ";
+        cin >> spi;
+    }
+
+    float get_spi() {
+        return spi;
+    }
+};
+
+int main() {
+    const int numStudents = 10;
+    Student students[numStudents];
+
+    for (int i = 0; i < numStudents; i++) {
+        cout << "Enter details for Student " << i + 1 << ":" << endl;
+        students[i].get_data();
+    }
+
+    int highest_index = 0;
+    for (int i = 1; i < numStudents; i++) {
+        if (students[i].get_spi() > students[highest_index].get_spi()) {
+            highest_index = i;
+        }
+    }
+
+    cout << "Student with the highest SPI is:" << endl;
+    cout << "Roll Number: " << students[highest_index].get_spi() << endl;
+
+    cout << "Muskan Y. Chandera" << endl;
+    cout << "220130318043" << endl;
+
+    return 0;
+}
