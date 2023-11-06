@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+class TemperatureConverter {
+public:
+    double fahrenheitToCelsius(double fahrenheit) {
+        return (fahrenheit - 32.0) * 5.0 / 9.0;
+    }
+};
+
+int main() {
+    TemperatureConverter converter;
+    double fahrenheit;
+
+    cout << "Enter temperature in Fahrenheit: ";
+    cin >> fahrenheit;
+
+    double celsius = converter.fahrenheitToCelsius(fahrenheit);
+
+    cout << "Temperature in Celsius: " << celsius << "°C" << endl;
+    
+    cout << "Muskan Y. Chandera" << endl;
+    cout << "220130318043" << endl;
+
+    return 0;
+}
