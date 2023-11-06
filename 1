@@ -1,0 +1,22 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main() {
+    ofstream file("test.txt");
+    
+    if (file.is_open()) {
+        file << "This is a test file." << endl;
+        file << "It contains some text." << endl;
+        file << "C++ FileStream Programming is used to write to this file." << endl;
+        file.close();
+        cout << "Data has been written to the file successfully." << endl;
+    } else {
+        cerr << "Unable to open the file." << endl;
+    }
+    
+    cout << "Muskan Y. Chandera" << endl;
+    cout << "220130318043" << endl;
+
+    return 0;
+}
