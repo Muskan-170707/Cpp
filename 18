@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+double power(double base, int exponent) {
+    double result = 1.0;
+
+    for (int i = 0; i < abs(exponent); i++) {
+        result *= base;
+    }
+
+    if (exponent < 0) {
+        result = 1.0 / result;
+    }
+
+    return result;
+}
+
+int main() {
+    double base;
+    int exponent;
+
+    cout << "Enter the base: ";
+    cin >> base;
+    cout << "Enter the exponent: ";
+    cin >> exponent;
+
+    double result = power(base, exponent);
+
+    cout << base << " raised to the power of " << exponent << " is " << result << endl;
+
+    cout << "Muskan Y. Chandera" << endl;
+    cout << "220130318043" << endl;
+
+    return 0;
+}
