@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+class ObjectDemo {
+public:
+    ObjectDemo() {
+        cout << "Object is created." << endl;
+    }
+
+    ~ObjectDemo() {
+        cout << "Object is destroyed. Goodbye!" << endl;
+    }
+};
+
+int main() {
+    cout << "Creating an ObjectDemo object:" << endl;
+    ObjectDemo obj;
+
+    cout << "Program ending. Object will be destroyed automatically." << endl;
+
+    cout << "Muskan Y. Chandera" << endl;
+    cout << "220130318043" << endl;
+
+    return 0;
+}
