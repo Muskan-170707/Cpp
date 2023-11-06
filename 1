@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+struct student {
+    char name[50];
+    int std;
+    float percentage;
+};
+
+int main() {
+    student s;
+
+    cout << "Enter student name: ";
+    cin.getline(s.name, 50);
+    cout << "Enter student standard: ";
+    cin >> s.std;
+    cout << "Enter student percentage: ";
+    cin >> s.percentage;
+
+    cout << "Student Details:" << endl;
+    cout << "Name: " << s.name << endl;
+    cout << "Standard: " << s.std << endl;
+    cout << "Percentage: " << s.percentage << "%" << endl;
+
+    cout << "Muskan Y. Chandera" << endl;
+    cout << "220130318043" << endl;
+
+    return 0;
+}
