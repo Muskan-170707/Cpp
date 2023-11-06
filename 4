@@ -1,0 +1,25 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main() {
+    ifstream sourceFile("test.txt");
+    ofstream destinationFile("copy.txt");
+    
+    if (sourceFile.is_open() && destinationFile.is_open()) {
+        char ch;
+        while (sourceFile.get(ch)) {
+            destinationFile.put(ch);
+        }
+        sourceFile.close();
+        destinationFile.close();
+        cout << "File has been copied successfully." << endl;
+    } else {
+        cerr << "Unable to open the files." << endl;
+    }
+    
+    cout << "Muskan Y. Chandera" << endl;
+    cout << "220130318043" << endl;
+
+    return 0;
+}
