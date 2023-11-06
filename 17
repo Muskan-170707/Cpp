@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int sum(int a, int b) {
+    return a + b;
+}
+
+double sum(double a, double b) {
+    return a + b;
+}
+
+int main() {
+    int num1 = 5, num2 = 3;
+    double d1 = 3.5, d2 = 2.1;
+
+    cout << "Sum of integers: " << sum(num1, num2) << endl;
+    cout << "Sum of doubles: " << sum(d1, d2) << endl;
+
+    cout << "Muskan Y. Chandera" << endl;
+    cout << "220130318043" << endl;
+
+    return 0;
+}
