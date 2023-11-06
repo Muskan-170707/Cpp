@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+class Grandparent {
+public:
+    void showGrandparent() {
+        cout << "This is the Grandparent class." << endl;
+    }
+};
+
+class Parent : public Grandparent {
+public:
+    void showParent() {
+        cout << "This is the Parent class, inherited from Grandparent." << endl;
+    }
+};
+
+class Child : public Parent {
+public:
+    void showChild() {
+        cout << "This is the Child class, inherited from Parent." << endl;
+    }
+};
+
+int main() {
+    Child obj;
+    obj.showGrandparent();
+    obj.showParent();
+    obj.showChild();
+    
+    cout << "Muskan Y. Chandera" << endl;
+    cout << "220130318043" << endl;
+
+    return 0;
+}
