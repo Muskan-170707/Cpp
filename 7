@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+class Employee {
+private:
+    int emp_no;
+    double salary;
+    int branch_code;
+
+public:
+    void initialize(int emp_no, double salary, int branch_code) {
+        this->emp_no = emp_no;
+        this->salary = salary;
+        this->branch_code = branch_code;
+    }
+
+    void display() {
+        cout << "Employee Number: " << emp_no << endl;
+        cout << "Salary: $" << salary << endl;
+        cout << "Branch Code: " << branch_code << endl;
+    }
+};
+
+int main() {
