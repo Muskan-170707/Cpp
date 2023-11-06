@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+class Distance {
+private:
+    int feet;
+    float inches;
+
+public:
+    void get_distance() {
+        cout << "Enter feet: ";
+        cin >> feet;
+        cout << "Enter inches: ";
+        cin >> inches;
+    }
+
+    void display_distance() {
+        cout << "Distance: " << feet << " feet " << inches << " inches" << endl;
+    }
+};
+
+int main() {
+    Distance d;
+    d.get_distance();
+    d.display_distance();
+
+    cout << "Muskan Y. Chandera" << endl;
+    cout << "220130318043" << endl;
+
+    return 0;
+}
