@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+class CopyConstructor {
+private:
+    int value;
+
+public:
+    CopyConstructor(int x) : value(x) {}
+
+    CopyConstructor(const CopyConstructor &other) {
+        value = other.value;
+    }
+
+    void display() {
+        cout << "Value: " << value << endl;
+    }
+};
+
+int main() {
+    CopyConstructor original(42);
+    CopyConstructor copy = original;
+
+    original.display();
+    copy.display();
+
+    cout << "Muskan Y. Chandera" << endl;
+    cout << "220130318043" << endl;
+
+    return 0;
+}
